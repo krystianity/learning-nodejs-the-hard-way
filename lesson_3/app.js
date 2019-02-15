@@ -1,38 +1,15 @@
-// lesson 3: closure
+// lesson 3: arrays
 
-// global environment given by node process
-// console.log(global);
+const y = [];
 
-// this = reference to curent context
-console.log(this);
+y.push(123);
+y.push(1,2,3);
+y.push([1,2,3]);
 
-// closure with custom context (old way)
-function myFunction1() {
-    this.wurst = 123;
-};
+y[1] = "wurst";
+y[10] = "kaese";
 
-// closure with inherited context (new way)
-const myFunction2 = () => {
-    this.wurst = 123;
-};
+//y.splice(..)
+//y.slice(..)
 
-function myFunction3() {
-    myFunction2.bind(this)();
-};
-
-const myContext = {kaese: 5};
-function myFunction4() {
-    myFunction2.bind(myContext)();
-};
-
-myFunction1();
-console.log(this);
-
-myFunction3();
-console.log(this);
-
-myFunction2();
-console.log(this);
-
-myFunction4();
-console.log(myContext);
+console.log(y);
