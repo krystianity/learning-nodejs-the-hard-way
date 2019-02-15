@@ -1,4 +1,4 @@
-// lesson 1: types
+// lesson 2: types
 
 const aBoolean = true; // false
 const aNumber = 1;

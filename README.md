@@ -8,12 +8,12 @@ You can execute a script with calling `node lesson_1/app.js` in your terminal.
 
 ### Lession 1
 
-Variable assertions.
+Variable assertions, keywords var, let, const.
 Start (here)[lesson_1/app.js].
 
 ### Lession 2
 
-Types.
+Types and typeof.
 Start (here)[lesson_2/app.js].
 
 ### Lession 3
