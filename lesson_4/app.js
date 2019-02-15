@@ -1,6 +1,6 @@
 // lesson 4: objects
 
-const myObject = {};
+let myObject = {};
 
 myObject.wurst = "123123";
 
