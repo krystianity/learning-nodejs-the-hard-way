@@ -1,5 +1,7 @@
 // lesson 3: arrays
 
+// Section A:
+
 const y = [];
 
 // add elements to the end of an array
@@ -22,7 +24,38 @@ console.log(y[0]); // always starts with 0
 // getting the last element of an array
 console.log(y[y.length - 1]);
 
+
+// Section B:
+
 // removing from array (starting from index 5, remove 5 elements from the array)
 y.splice(5, 5);
 
 console.log(y);
+
+// deleting the last element from an array
+
+const lastElement = y.splice(y.length - 1, 1);
+console.log(y, lastElement);
+
+
+// Section C:
+
+// iterating through an array (classical way)
+
+for(let i = 0; i < y.length; i++){
+    console.log(y[i]);
+}
+
+// iterating through an array (new way)
+
+for(const element of y){
+    console.log(element);
+}
+
+// iterating through an array (functional)
+
+const iteratorFunction = (element) => {
+    console.log(element);
+};
+
+y.forEach(iteratorFunction);
